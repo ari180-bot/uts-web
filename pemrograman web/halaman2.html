@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ari Setiawan</title>
+  <link rel="stylesheet" href="p1.css" />
+</head>
+<body>
+  <header>
+    <h1 animate__pulse>Ari Setiawan</h1>
+    <nav>
+      <a href="praktik1.html">Home</a>
+      <a href="#">My Gallery</a>
+      <a href="page3.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="ppri.jpg" alt="Foto Ari Setiawan" />
+        </div>
+        <div class="hero-text">
+          <h2>Ari Setiawan</h2>
+          <p>Web Developer & Designer</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <h1 class="h1">Selamat datang di galery saya</h1>
+    <p class="p1">ini adalah galery tempat saya menempatkan karya saya selamat menikmati</p>
+
+
+    <div class="container">
+      <div class="cardgal"> <img src="8.jpeg" alt=""></div>
+      <div class="cardgal"><img src="2.jpeg" alt=""></div>
+      <div class="cardgal"><img src="3.jpeg" alt=""></div>
+      <div class="cardgal"><img src="5.jpeg" alt=""></div>
+      <div class="cardgal"><img src="6.jpeg" alt=""></div>
+      <div class="cardgal"><img src="7.jpeg" alt=""></div>
+
+    </div>
+
+<div id="modal" class="modal" onclick="closeModal()">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Ari Setiawan. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("modalImg");
+  
+    document.querySelectorAll(".cardgal img").forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+    });
+  
+    function closeModal() {
+      modal.style.display = "none";
+    }
+  </script>
+  
+</body>
+</html>

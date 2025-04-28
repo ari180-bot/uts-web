@@ -1,0 +1,457 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+  }
+  
+  header {
+    background-color: #1e293b;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+  }
+  
+  nav a {
+    color: #cbd5e1;
+    margin-left: 1rem;
+    text-decoration: none;
+  }
+  
+  .hero {
+    padding: 6rem 4rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .hero-image img {
+    width: 200px;
+    border-radius: 999px;
+    border: 3px solid #04026d;
+    justify-content: left;
+    display: flex;
+  }
+  
+  .hero-text h2 {
+    font-size: 2.5rem;
+    color: #a5b4fc;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    color: #94a3b8;
+  }
+
+.dev-about {
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  margin-top: 100px;
+}
+
+.ul_about {
+  display: flex;
+  justify-content: center;
+  margin-left:0 auto;
+  position: relative;
+
+}
+
+.card{
+  list-style-type: none;
+  margin: 0 auto;
+  width: 290px;
+  height: 300px;
+  border-radius: 30px;
+  background: #30466817;
+  box-shadow: rgba(35, 35, 153, 0.25) 0px 30px 50px -12px inset, rgba(10, 14, 61, 0.3) 0px 18px 26px -18px inset;
+}
+
+.card span {
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 1em;
+}
+
+.card .info {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 0.72em;
+  margin: 3em;
+}
+
+.card .img {
+  width: 4.8em;
+  height: 4.8em;
+  background: white;
+  border-radius: 15px;
+  margin: auto;
+}
+
+.card .share {
+  margin-top: 6em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.card a {
+  color: white;
+  transition: .4s ease-in-out;
+}
+
+.card a:hover {
+  color: red;
+}
+
+.card button:hover {
+  transform: translate(-3px);
+  background: red;
+  color: white;
+  cursor: pointer;
+}
+
+.card2{
+  list-style-type: none;
+  margin-left: 5em;
+  width: 290px;
+  height: 300px;
+  border-radius: 30px;
+  background: #30466817;
+  box-shadow: rgba(35, 35, 153, 0.25) 0px 30px 50px -12px inset, rgba(10, 14, 61, 0.3) 0px 18px 26px -18px inset;
+}
+
+.span2 {
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 1em;
+}
+
+.info2 {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 0.72em;
+  margin: 3em;
+}
+
+.share2 {
+  margin-top: 9em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.card2 a {
+  color: white;
+  transition: .4s ease-in-out;
+}
+
+.card2 a:hover {
+  color: red;
+}
+
+.card2 button:hover {
+  transform: translate(-3px);
+  background: red;
+  color: white;
+  cursor: pointer;
+}
+
+.project{
+  list-style-type: none;
+}
+
+.h3skill{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+.div-skill {
+  display: flex;
+  list-style: none;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.card-project {
+  list-style-type: none;
+  list-style: none;
+  width: 400px;
+  aspect-ratio: 1 / 0.7;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-project .img-box {
+  width: 100%;
+  height: 100%;
+}
+
+.card-project .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+
+.card-project::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid white;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.card-project .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  width: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+
+.card-project .content h2 {
+  margin: 0;
+  font-size: 24px;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: 0.4s ease;
+}
+
+.card-project .content p {
+  margin: 10px 0 0;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.4s ease;
+}
+
+.card-project:hover img {
+  filter: grayscale(1) brightness(0.4);
+}
+
+.card-project:hover::after {
+  opacity: 1;
+  inset: 20px;
+}
+
+.card-project:hover .content h2 {
+  transform: scale(1);
+  opacity: 1;
+  justify-content: center;
+}
+
+.card-project:hover .content p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1e293b;
+    border-top: 1px solid #334155;
+  }
+
+  .ulskill{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .liskill{
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin: 0 auto;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-rows: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 10px;
+    align-content: center;
+    grid-auto-flow: row dense;
+  }
+
+  .cardgal{
+    width: 190px;
+    height: 200px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    flex: 0 1 150px;
+    margin-bottom: 30px;
+  }
+
+  .cardgal img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+
+  .container:hover > :not(:hover){
+    opacity: 0.3;
+  }
+
+  .cardgal:hover{
+    transform: scale(1.1);
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    animation: zoom 0.3s ease;
+    border-radius: 8px;
+  }
+  
+  @keyframes zoom {
+    from {transform: scale(0.7);}
+    to {transform: scale(1);}
+  }
+  
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .h1{
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .p1{
+    font-style: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+ /* Untuk memastikan form berada di tengah halaman */
+.form-card1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Membuat form berada di tengah vertikal */
+  padding: 0 20px; /* Menambahkan sedikit padding kiri dan kanan */
+}
+
+/* Container untuk form, agar lebih besar dan terlihat lebih elegan */
+.form-card2 {
+  width: 600px; /* Ukuran form yang lebih besar */
+  padding: 20px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 30px; /* Memberikan jarak dengan elemen bawah */
+}
+
+/* Heading untuk form */
+.form-heading {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Styling untuk setiap field */
+.form-field {
+  margin-bottom: 15px;
+}
+
+/* Styling untuk input field */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Untuk memastikan lebar input sesuai dengan container */
+}
+
+/* Styling untuk textarea */
+textarea.input-field {
+  resize: vertical;
+}
+
+/* Styling untuk tombol kirim */
+.sendMessage-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.sendMessage-btn:hover {
+  background-color: #45a049;
+}
+
